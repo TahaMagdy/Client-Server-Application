@@ -33,7 +33,7 @@ while True:
     # Send the databack
     if data:
         print("Hello Client, Address is ", clientAddress)
-        # connection.sendall(data)
+        connection.sendall("Hello Client, I'm I server and I LOVE YOU".encode())
     else:
         print("No Data")
         break
