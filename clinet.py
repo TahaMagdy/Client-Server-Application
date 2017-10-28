@@ -17,6 +17,10 @@ try:
         client.sendall(message.encode())
         print("MESSAGE IS SENT")
 
+        # Recieve the reponse
+        data = client.recv(100)
+        print(data)
+
 
 except:
     print("Client Exception")
